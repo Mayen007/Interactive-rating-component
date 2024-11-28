@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+  <title>Frontend Mentor | Interactive Rating Component</title>
+  <link rel="stylesheet" href="./assets/static/style.css">
+</head>
+
+<body>
+  <main>
+    <section class="container" id="container">
+      <img src="./assets/images/icon-star.svg" alt="Star icon" class="card-image">
+      <h2 class="heading"> How did we do?</h2>
+      <p class="description">Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <div class="ratings">
+        <button class="rating-btn" aria-label="1 star" data-rating="1">1</button>
+        <button class="rating-btn" aria-label="2 stars" data-rating="2">2</button>
+        <button class="rating-btn" aria-label="3 stars" data-rating="3">3</button>
+        <button class="rating-btn" aria-label="4 stars" data-rating="4">4</button>
+        <button class="rating-btn" aria-label="5 stars" data-rating="5">5</button>
+      </div>
+      <button class="submit-btn">Submit</button>
+    </section>
+    <section class="thank-you-state" aria-live="polite" hidden id="thank-you-state" role="dialog">
+      <img src="./assets/images/illustration-thank-you.svg" alt="" class="thank-you-image">
+      <p class="rating-info">You selected <span id="selected-rating"><!-- Add rating here --></span> out of 5</p>
+      <h2>Thank you!</h2>
+      <p class="description">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI"
+        rel="noopener noreferrer" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.github.com">Mayen007</a>.
+    </div>
+  </footer>
+
+  <script src="./assets/static/script.js"></script>
+</body>
+
+</html>
